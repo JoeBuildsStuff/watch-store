@@ -32,11 +32,12 @@ export function ProductCard({
         <Link href={`/products/${id}`} className="relative block">
           <AspectRatio ratio={3/4}>
             <div className="absolute inset-0 z-10">
+              {/* Image needed: Product image from data file - requires actual product images */}
               <Image
                 src={image}
                 alt={name}
                 fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-300"
                 sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
               />
             </div>

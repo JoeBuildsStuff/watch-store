@@ -17,11 +17,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-black">
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10" />
           <div className="absolute inset-0 flex items-center">
+            {/* Image needed: /images/hero-watch.jpg - luxury watch hero image */}
             <Image 
               src="/images/hero-watch.jpg" 
               alt="Luxury watch" 
               fill 
-              className="object-cover"
+              className="object-cover bg-gray-800"
               priority
               sizes="100vw"
             />
@@ -55,11 +56,12 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <Link href="/collections/luxury" className="group relative overflow-hidden rounded-lg">
             <div className="absolute inset-0 bg-black">
+              {/* Image needed: /images/category-luxury.jpg - luxury watches category image */}
               <Image 
                 src="/images/category-luxury.jpg" 
                 alt="Luxury Watches" 
                 fill 
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-700"
               />
               <div className="absolute inset-0 bg-black/30" />
             </div>
@@ -73,11 +75,12 @@ export default function Home() {
           </Link>
           <Link href="/collections/sport" className="group relative overflow-hidden rounded-lg">
             <div className="absolute inset-0 bg-black">
+              {/* Image needed: /images/category-sport.jpg - sport watches category image */}
               <Image 
                 src="/images/category-sport.jpg" 
                 alt="Sport Watches" 
                 fill 
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-700"
               />
               <div className="absolute inset-0 bg-black/30" />
             </div>
@@ -91,11 +94,12 @@ export default function Home() {
           </Link>
           <Link href="/collections/smart" className="group relative overflow-hidden rounded-lg">
             <div className="absolute inset-0 bg-black">
+              {/* Image needed: /images/category-smart.jpg - smart watches category image */}
               <Image 
                 src="/images/category-smart.jpg" 
                 alt="Smart Watches" 
                 fill 
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-700"
               />
               <div className="absolute inset-0 bg-black/30" />
             </div>
@@ -109,11 +113,12 @@ export default function Home() {
           </Link>
           <Link href="/collections/classic" className="group relative overflow-hidden rounded-lg">
             <div className="absolute inset-0 bg-black">
+              {/* Image needed: /images/category-classic.jpg - classic watches category image */}
               <Image 
                 src="/images/category-classic.jpg" 
                 alt="Classic Watches" 
                 fill 
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 bg-gray-700"
               />
               <div className="absolute inset-0 bg-black/30" />
             </div>

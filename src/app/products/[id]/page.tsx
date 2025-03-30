@@ -14,7 +14,7 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProductPage({ params }: { params: { id: string } }) {
+export default function ProductPage({ params }: any) {
   const product = products.find((p) => p.id === params.id);
 
   if (!product) {
@@ -36,11 +36,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         <div className="space-y-4">
           <Card className="overflow-hidden rounded-lg">
             <AspectRatio ratio={1}>
+              {/* Image needed: Primary product image from data file */}
               <Image
                 src={product.images[0]}
                 alt={product.name}
                 fill
-                className="object-cover"
+                className="object-cover bg-gray-300"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </AspectRatio>
@@ -52,11 +53,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 className="cursor-pointer overflow-hidden rounded-lg"
               >
                 <AspectRatio ratio={1}>
+                  {/* Image needed: Secondary product images from data file */}
                   <Image
                     src={image}
                     alt={`${product.name} ${index + 2}`}
                     fill
-                    className="object-cover"
+                    className="object-cover bg-gray-300"
                     sizes="(min-width: 1024px) 12vw, 25vw"
                   />
                 </AspectRatio>

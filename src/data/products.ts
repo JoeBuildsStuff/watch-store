@@ -7,12 +7,18 @@ export interface Product {
   description: string;
   features: string[];
   specifications: Record<string, string>;
-  images: string[];
+  images: string[]; // Each product needs 3 images with paths like /images/watches/{product-id}-1.jpg
   category: "luxury" | "sport" | "smart" | "classic";
   isNew?: boolean;
   isSale?: boolean;
   stock: number;
 }
+
+// Each product needs its own set of images in /public/images/watches/ directory
+// Example image paths for each product:
+// - /images/watches/{product-id}-1.jpg (main product image)
+// - /images/watches/{product-id}-2.jpg (secondary view)
+// - /images/watches/{product-id}-3.jpg (additional view)
 
 export const products: Product[] = [
   {

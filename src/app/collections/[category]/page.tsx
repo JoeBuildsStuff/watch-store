@@ -37,11 +37,7 @@ export function generateStaticParams() {
   ];
 }
 
-export default function CategoryPage({
-  params,
-}: {
-  params: { category: string };
-}) {
+export default function CategoryPage({ params }: any) {
   const category = params.category as CategoryType;
   
   if (!Object.keys(categoryInfo).includes(category)) {
